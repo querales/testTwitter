@@ -8,7 +8,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "appdynamics": "^4.0.7",
+    "appdynamics": "^4.1.5",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
     "twitter": "^1.2.5"
-  }
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/querales/testTwitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/querales/testTwitter/issues"
+  },
+  "homepage": "https://github.com/querales/testTwitter#readme"
 }

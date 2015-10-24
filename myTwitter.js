@@ -4,16 +4,17 @@ var env = require('./env.js')
 // appdynamics agent
 require("appdynamics").profile({
     controllerHostName: process.env.APPDYN_HOST,
-    controllerPort: process.env.APPDYN_PORT , // If SSL, be sure to enable the next line     c 
-    controllerSslEnabled: true,
+  //  controllerPort: process.env.APPDYN_PORT , // If SSL, be sure to enable the next line  
+    controllerPort:443, // If SSL, be sure to enable the next line  
+    controllerSslEnabled:true,
     accountName: process.env.APPDYN_ACCT_NAME,
     accountAccessKey: process.env.APPDYN_ACCESS_KEY,
-    applicationName: 'My_twitter_app',
+    applicationName: 'My_twitter_app_2',
     tierName: 'twitter',
-    nodeName: 'get_tweet' // The controller will automatically append the node name with a unique number
+    nodeName: 'get_tweet', // The controller will automatically append the node name with a unique number
   //  proxyCtrlDir: './node_modules/appdynamics/node_modules/appdynamics-proxy/tmp/proxy.communication',
   //  proxyAutolaunchDisabled: true, // i need to start a proxy manually for each nodeJS app
-//  debug:true // The controller will automatically append the node name with a unique number
+    debug:true // The controller will automatically append the node name with a unique number
 });
 
 
